@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/temp2.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+  <meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Product5</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+	const name = doctument.getElementById('name')
+	const password = doctument.getElementById('pasword')
+	const form = doctument.getElementById('form')
+	const errorElement = doctument.getElementById('error')
+	
+	form.addEventListener('submit', (e) => {
+		let messages = []
+		if(name.value === ''|| name.value == null){
+			messages.push('name is required')
+		}
+		if (password.value.lenth <= 6){
+			messages.push('password must be longer than 6 characters')
+		}
+		
+		if (messages.length > 0){
+			e.preventDefault()
+			errorElement.innerText = messages.join(', ')
+		}
+		
+	})
+	</script>
+	<style>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+	</style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Nozama</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="Home.html">Home</a></li>
+      <li><a href="Shop.html">Shop</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="makeaccount.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="signin.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- InstanceBeginEditable name="main" -->
+  
+<div class="container">
+  <h1><img src="Product5.jpg" width="39%" height="500" alt="" class="center"/></h1>
+  <h2>ASUS</h2>
+  <p> TUF Gaming VG279QM 27” HDR Monitor, 1080P Full HD (1920 x 1080), Fast IPS, 280Hz, G-SYNC Compatible, Extreme Low Motion Blur Sync (ELMB SYNC), 1ms, DisplayHDR 400,, BLACK</p>
+<ul>
+    <li>27-inch Full HD (1920 x 1080) Fast IPS gaming monitor with ultrafast 280Hz refresh rate (overclocked) designed for professional gamers and immersive gameplay. </li>
+	<li>ASUS Extreme Low Motion Blur Sync (ELMB SYNC) technology enables ELMB together with G-SYNC Compatible, eliminating ghosting and tearing for sharp gaming visuals with high frame rates.</li>
+	<li>Certified as G-SYNC Compatible, delivering a seamless, tear-free gaming experience by enabling VRR (variable refresh rate) by default.</li>
+</ul>
+  <h5> Price: $282.99 </h5>
+  <div>
+  <ul class="nav navbar-nav">
+	  <li><a href="Shop.html">Back to Shop</a></li>
+      <li><a href="#">Add To Cart</a></li>
+    </ul>
+</div>
+</div>
+<!-- InstanceEndEditable -->
+</body>
+<!-- InstanceEnd --></html>

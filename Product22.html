@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/temp2.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+  <meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Product22</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+	const name = doctument.getElementById('name')
+	const password = doctument.getElementById('pasword')
+	const form = doctument.getElementById('form')
+	const errorElement = doctument.getElementById('error')
+	
+	form.addEventListener('submit', (e) => {
+		let messages = []
+		if(name.value === ''|| name.value == null){
+			messages.push('name is required')
+		}
+		if (password.value.lenth <= 6){
+			messages.push('password must be longer than 6 characters')
+		}
+		
+		if (messages.length > 0){
+			e.preventDefault()
+			errorElement.innerText = messages.join(', ')
+		}
+		
+	})
+	</script>
+	<style>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+	</style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Nozama</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="Home.html">Home</a></li>
+      <li><a href="Shop.html">Shop</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="makeaccount.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="signin.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- InstanceBeginEditable name="main" -->
+  
+<div class="container">
+  <h1><img src="Product22.jpg" width="39%" height="500" alt="" class="center"/></h1>
+  <h2>FIFINE</h2>
+  <p>Gaming USB Microphone for PC PS5, Condenser Mic with Quick Mute, RGB Indicator, Tripod Stand, Pop Filter, Shock Mount, Gain Control for Streaming Discord Twitch Podcasts Videos- AmpliGame</p>
+<ul>
+    <li>Gradient RGB and Quick Mute - Bicolored RGB lighting alters seven color modes itself gradiently. The RGB microphone adds carnival atmosphere with light-up computer setups, putting you in the fierce game arena. You can immediately mute USB gaming mic when you concentrate on the game via the handily quick mute button. RGB LED is off when the studio microphone gaming is muted to tell you working status. Prevent your streaming from accidents caused by forgetting to mute USB PC microphone gaming.</li>
+	<li>Vivid Voice Enjoyment - Designed for streaming microphone for PC gamer, the built-in PC mic capsule offers clear and full sound. That will sound like your whole team members are playing side by side. Cardioid condenser mic for PC sensitively picks up the front sound. Your friends can clearly hear your call no matter it is PS5 or PC gaming, making it easier to get champion.</li>
+	<li>Handy Use - Gain knob at the bottom is quick to access. If game sound affects your voice, you can instantly adjust the volume from USB computer microphone for podcast instead of shouting to your teammates or lowering your own voice. Thumbscrew on the desktop vlogging microphone helps you tilt the best streaming recording angle in advance, to get a pleasant speaking posture during games or streaming.</li>
+</ul>
+  <h5> Price: $27.99 </h5>
+  <div>
+  <ul class="nav navbar-nav">
+	  <li><a href="Shop.html">Back to Shop</a></li>
+      <li><a href="#">Add To Cart</a></li>
+    </ul>
+</div>
+</div>
+<!-- InstanceEndEditable -->
+</body>
+<!-- InstanceEnd --></html>

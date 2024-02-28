@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/temp2.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+  <meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Product3</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+	const name = doctument.getElementById('name')
+	const password = doctument.getElementById('pasword')
+	const form = doctument.getElementById('form')
+	const errorElement = doctument.getElementById('error')
+	
+	form.addEventListener('submit', (e) => {
+		let messages = []
+		if(name.value === ''|| name.value == null){
+			messages.push('name is required')
+		}
+		if (password.value.lenth <= 6){
+			messages.push('password must be longer than 6 characters')
+		}
+		
+		if (messages.length > 0){
+			e.preventDefault()
+			errorElement.innerText = messages.join(', ')
+		}
+		
+	})
+	</script>
+	<style>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+	</style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Nozama</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="Home.html">Home</a></li>
+      <li><a href="Shop.html">Shop</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="makeaccount.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="signin.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- InstanceBeginEditable name="main" -->
+  
+<div class="container">
+  <h1><img src="Product3.jpg" width="39%" height="500" alt="" class="center"/></h1>
+  <h2>AOC</h2>
+  <p>C27G2Z 27" Curved Frameless Ultra-Fast Gaming Monitor, FHD 1080p, 0.5ms 240Hz, FreeSync, HDMI/DP/VGA, Height Adjustable, 3-Year Zero Dead Pixel Guarantee, Black, Xbox PS5 Switch</p>
+<ul>
+    <li>27" AOC Gaming G2 series monitor with 1920x1080 Full HD (1080P) Resolution Curved VA panel.Aspect ratio:16:9.Viewing Angle:170.0 degrees</li>
+	<li>240Hz refresh rate (via DP1.4) and rapid 0.5ms MPRT response time lets you target moving opponents with precision, putting you ahead of the game. Fast-moving action and dramatic transitions will be rendered smoothly without the effects of ghosting with AMD FreeSync Premium technology.</li>
+	<li>1500R curved monitor wraps around your vision for an immersive gaming experience.</li>
+	<li>119.9% sRGB, 89.8% DCI-P3 wide color gamut brings characters to life and creates stunning imagery with rich details and diverse contrast</li>
+</ul>
+  <h5> Price: $175.99 </h5>
+  <div>
+  <ul class="nav navbar-nav">
+	  <li><a href="Shop.html">Back to Shop</a></li>
+      <li><a href="#">Add To Cart</a></li>
+    </ul>
+</div>
+</div>
+<!-- InstanceEndEditable -->
+</body>
+<!-- InstanceEnd --></html>

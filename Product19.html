@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/temp2.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+  <meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Product19</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+	const name = doctument.getElementById('name')
+	const password = doctument.getElementById('pasword')
+	const form = doctument.getElementById('form')
+	const errorElement = doctument.getElementById('error')
+	
+	form.addEventListener('submit', (e) => {
+		let messages = []
+		if(name.value === ''|| name.value == null){
+			messages.push('name is required')
+		}
+		if (password.value.lenth <= 6){
+			messages.push('password must be longer than 6 characters')
+		}
+		
+		if (messages.length > 0){
+			e.preventDefault()
+			errorElement.innerText = messages.join(', ')
+		}
+		
+	})
+	</script>
+	<style>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+	</style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Nozama</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="Home.html">Home</a></li>
+      <li><a href="Shop.html">Shop</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="makeaccount.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="signin.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- InstanceBeginEditable name="main" -->
+  
+<div class="container">
+  <h1><img src="Product19.jpg" width="1000" height="500" alt="" class="center"/></h1>
+  <h2>WOMIER</h2>
+  <p>60% Percent Keyboard, WK61 Mechanical RGB Wired Gaming Keyboard, Hot-Swappable Keyboard with Blue Sea PBT Keycaps for Windows PC Gamers - Linear Red Switch</p>
+<ul>
+    <li>The theme style makes this 60% keyboard more unique. The matte translucent bottom cover will give your keyboard an incredibly smooth and clean feeling when RGB is turned off. When RGB is turned on, the frosted wall brings out the brilliance of RGB in all directions.</li>
+	<li>The gaming keyboard has added the latest 2in1 Silicone Pad, which provides a richer operating space for keyboard DIY enthusiasts. Pad can maximally absorb hollow sound and provide extra stable typing feeling.</li>
+	<li>Womier WK61 Mechanical keyboard come with 3 pcs sublimation keycaps that can be replaceable, You can freely match the colors you like. So that you can DIY and do whatever you want. In the hearts of players, WK61 is the most cost-effective DIY 60% mechanical keyboard. Meet your needs for custom keyboards.</li>
+</ul>
+  <h5> Price: $35.99 </h5>
+  <div>
+  <ul class="nav navbar-nav">
+	  <li><a href="Shop.html">Back to Shop</a></li>
+      <li><a href="#">Add To Cart</a></li>
+    </ul>
+</div>
+</div>
+<!-- InstanceEndEditable -->
+</body>
+<!-- InstanceEnd --></html>

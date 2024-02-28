@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/temp2.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+  <meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>shop</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<style>
+	
+img {
+  float: left;
+}
+</style>
+<!-- InstanceEndEditable -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+	const name = doctument.getElementById('name')
+	const password = doctument.getElementById('pasword')
+	const form = doctument.getElementById('form')
+	const errorElement = doctument.getElementById('error')
+	
+	form.addEventListener('submit', (e) => {
+		let messages = []
+		if(name.value === ''|| name.value == null){
+			messages.push('name is required')
+		}
+		if (password.value.lenth <= 6){
+			messages.push('password must be longer than 6 characters')
+		}
+		
+		if (messages.length > 0){
+			e.preventDefault()
+			errorElement.innerText = messages.join(', ')
+		}
+		
+	})
+	</script>
+	<style>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+	</style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Nozama</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="Home.html">Home</a></li>
+      <li><a href="Shop.html">Shop</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="makeaccount.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="signin.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- InstanceBeginEditable name="main" -->
+  
+<div class="container">
+  <h1><img src="Product1.jpg" width="200" height="200" alt=""/></h1>
+	<h2 style="padding-left: 225px">SCEPTRE</h2>
+  <p style="padding-left: 225px">Curved 24.5-inch Gaming Monitor up to 240Hz 1080p R1500 1ms DisplayPort x2 HDMI x2 Blue Light Shift Build-in Speakers, Machine Black 2023</p>
+	<h5 style="padding-left: 225px"> Price: $129.97 </h5>
+  <div style="padding-left: 225px">
+  <ul class="nav navbar-nav">
+      <li><a href="Product1.html">Learn more</a></li>
+    </ul>
+</div>
+</div>
+<div class="container">
+  <h1><img src="Product2.jpg" width="200" height="200" alt=""/></h1>
+<h2 style="padding-left: 225px">ACER</h2>
+  <p style="padding-left: 225px">Nitro XZ270 Xbmiipx 27" 1500R Curved Full HD (1920 x 1080) VA Zero-Frame Gaming Monitor with Adaptive Sync, 240Hz Refresh Rate and 1ms VRB (Display Port and 2 x HDMI 2.0 Ports) , Black</p>
+	<h5 style="padding-left: 225px"> Price: $159.99 </h5>
+  <div style="padding-left: 225px">
+  <ul class="nav navbar-nav">
+      <li><a href="Product2.html">Learn more</a></li>
+    </ul>
+</div>
+</div>
+ <div class="container">
+  <h1><img src="Product3.jpg" width="200" height="200" alt=""/></h1>
+	<h2 style="padding-left: 225px">AOC</h2>
+  <p style="padding-left: 225px">C27G2Z 27" Curved Frameless Ultra-Fast Gaming Monitor, FHD 1080p, 0.5ms 240Hz, FreeSync, HDMI/DP/VGA, Height Adjustable, 3-Year Zero Dead Pixel Guarantee, Black, Xbox PS5 Switch </p>
+	 <h5 style="padding-left: 225px"> Price: $175.99 </h5>
+  <div style="padding-left: 225px">
+  <ul class="nav navbar-nav">
+      <li><a href="Product3.html">Learn more</a></li>
+    </ul>
+</div>
+</div>
+<div class="container">
+  <h1><img src="Product4.jpg" width="200" height="150" alt=""/></h1>
+	<h2 style="padding-left: 225px">ACER</h2>
+  <p style="padding-left: 225px">Nitro 27" WQHD 2560 x 1440 PC Gaming Monitor | AMD FreeSync Premium | Up to 240Hz Refresh | Up to 0.5ms HDR350 | DCI-P3 90% | 1 x Display Port 1.4 and 2 x HDMI 2.1 | KG271U Xbmiipx</p>
+	<h5 style="padding-left: 225px"> Price: $249.99 </h5>
+  <div style="padding-left: 225px">
+  <ul class="nav navbar-nav">
+      <li><a href="Product4.html">Learn more</a></li>
+    </ul>
+</div>
+</div>
+<div class="container">
+  <h1><img src="Product5.jpg" width="200" height="200" alt=""/></h1>
+<h2 style="padding-left: 225px">ASUS</h2>
+  <p style="padding-left: 225px">TUF Gaming VG279QM 27” HDR Monitor, 1080P Full HD (1920 x 1080), Fast IPS, 280Hz, G-SYNC Compatible, Extreme Low Motion Blur Sync (ELMB SYNC), 1ms, DisplayHDR 400,, BLACK</p>
+	<h5 style="padding-left: 225px"> Price: $282.99 </h5>
+  <div style="padding-left: 225px">
+  <ul class="nav navbar-nav">
+      <li><a href="Product5.html">Learn more</a></li>
+    </ul>
+</div>
+</div>
+ <div class="container">
+  <h1><img src="Product6.jpg" width="200" height="200" alt=""/></h1>
+	<h2 style="padding-left: 225px">ASTRO</h2>
+  <p style="padding-left: 225px">Gaming A40 TR Wired Headset with Astro Audio V2 for Xbox Series X | S| One, PC and Mac</p>
+	 <h5 style="padding-left: 225px"> Price: $129.99 </h5>
+  <div style="padding-left: 225px">
+  <ul class="nav navbar-nav">
+      <li><a href="Product6.html">Learn more</a></li>
+    </ul>
+</div>
+</div>
+ <div class="container">
+  <h1><img src="Product7.jpg" width="200" height="200" alt=""/></h1>
+	<h2 style="padding-left: 225px">ASTRO</h2>
+  <p style="padding-left: 225px">Gaming A50 Wireless Headset + Base Station Gen 4 - Compatible With PS5, PS4, PC, Mac - Black/Silver</p>
+	<h5 style="padding-left: 225px"> Price: $214.99 </h5>
+  <div style="padding-left: 225px">
+  <ul class="nav navbar-nav">
+      <li><a href="Product7.html">Learn more</a></li>
+    </ul>
+</div>
+</div>
+<div class="container">
+  <h1><img src="Product8.jpg" width="200" height="200" alt=""/></h1>
+<h2 style="padding-left: 225px">CORSAIR</h2>
+  <p style="padding-left: 225px">VIRTUOSO RGB WIRELESS XT Multiplatform Gaming Headset With Bluetooth - Dolby Atmos - Broadcast Quality Microphone - iCUE Compatible- PC, Mac, PS5, PS4, Nintendo Switch, Mobile - Black</p>
+	<h5 style="padding-left: 225px"> Price: $189.99 </h5>
+  <div style="padding-left: 225px">
+  <ul class="nav navbar-nav">
+      <li><a href="Product8.html">Learn more</a></li>
+    </ul>
+</div>
+</div>
+ <div class="container">
+  <h1><img src="Product9.jpg" width="200" height="200" alt=""/></h1>
+	<h2 style="padding-left: 225px">RAZOR</h2>
+  <p style="padding-left: 225px">BlackShark V2 Pro Wireless Gaming Headset: THX 7.1 Spatial Surround Sound - 50mm Drivers - Detachable Mic - for PC, PS5, PS4, Switch, Black</p>
+	 <h5 style="padding-left: 225px"> Price: $129.99 </h5>
+  <div style="padding-left: 225px">
+  <ul class="nav navbar-nav">
+      <li><a href="Product9.html">Learn more</a></li>
+    </ul>
+</div>
+</div>
+<div class="container">
+  <h1><img src="Product10.jpg" width="150" height="200" alt=""/></h1>
+	<h2 style="padding-left: 225px">STEEL SERIES</h2>
+  <p style="padding-left: 225px">Arctis Nova 7 Wireless Multi-Platform Gaming Headset – Simultaneous Wireless 2.4GHz and Bluetooth – Comfort Design - Fast Charging 38Hr Battery – PC, PS, Switch, Mobile,Black</p>
+	<h5 style="padding-left: 225px"> Price: $149.99 </h5>
+  <div style="padding-left: 225px">
+  <ul class="nav navbar-nav">
+      <li><a href="Product10.html">Learn more</a></li>
+    </ul>
+</div>
+</div>
+<div class="container">
+  <h1><img src="Product11.jpg" width="125" height="200" alt=""/></h1>
+<h2 style="padding-left: 225px">LOGITECH</h2>
+  <p style="padding-left: 225px">G703 Lightspeed Wireless Gaming Mouse W/Hero 25K Sensor, PowerPlay Compatible, Lightsync RGB, Lightweight 95G+10G Optional, 100-25, 600 DPI, Rubber Side Grips - Black</p>
+	<h5 style="padding-left: 225px"> Price: $64.99 </h5>
+  <div style="padding-left: 225px">
+  <ul class="nav navbar-nav">
+      <li><a href="Product11.html">Learn more</a></li>
+    </ul>
+</div>
+</div>
+ <div class="container">
+  <h1><img src="Product12.jpg" width="125" height="200" alt=""/></h1>
+	<h2 style="padding-left: 225px">LOGITECH</h2>
+  <p style="padding-left: 225px">G PRO Wireless Gaming Mouse, Hero 25K Sensor, 25,600 DPI, RGB, Ultra Lightweight, 4-8 Programmable Buttons, Long Battery Life, POWERPLAY-Compatible, UK Packaging, PC/Mac color Black</p>
+	 <h5 style="padding-left: 225px"> Price: $88.99 </h5>
+  <div style="padding-left: 225px">
+  <ul class="nav navbar-nav">
+      <li><a href="Product12.html">Learn more</a></li>
+    </ul>
+</div>
+</div>
+	<div class="container">
+  <h1><img src="Product13.jpg" width="125" height="200" alt=""/></h1>
+	<h2 style="padding-left: 225px">LOGITECH</h2>
+  <p style="padding-left: 225px">G502 Lightspeed Wireless Gaming Mouse, Hero 25K Sensor, 25,600 DPI, RGB, Adjustable Weights, 11 Programmable Buttons, Long Battery Life, POWERPLAY-Compatible, PC/Mac - Black</p>
+	<h5 style="padding-left: 225px"> Price: $95.99 </h5>
+  <div style="padding-left: 225px">
+  <ul class="nav navbar-nav">
+      <li><a href="Product13.html">Learn more</a></li>
+    </ul>
+</div>
+</div>
+<div class="container">
+  <h1><img src="Product14.png" width="200" height="175" alt=""/></h1>
+<h2 style="padding-left: 225px">LOGITECH</h2>
+  <p style="padding-left: 225px">G PRO X SUPERLIGHT Wireless Gaming Mouse, Ultra-Lightweight, HERO 25K Sensor, 25,600 DPI, 5 Programmable Buttons, Long Battery Life, Compatible with PC / Mac - Black</p>
+	<h5 style="padding-left: 225px"> Price: $159.99 </h5>
+  <div style="padding-left: 225px">
+  <ul class="nav navbar-nav">
+      <li><a href="Product14.html">Learn more</a></li>
+    </ul>
+</div>
+</div>
+ <div class="container">
+  <h1><img src="Product15.jpg" width="175" height="200" alt=""/></h1>
+	<h2 style="padding-left: 225px">LOGITECH</h2>
+  <p style="padding-left: 225px">G903 LIGHTSPEED Wireless Gaming Mouse W/ Hero 25K Sensor, PowerPlay Compatible, 140+ Hour with Rechargeable Battery and Lightsync RGB, Ambidextrous, 107G+10G optional, 25,600 DPI, Black</p>
+	 <h5 style="padding-left: 225px"> Price: $69.99 </h5>
+  <div style="padding-left: 225px">
+  <ul class="nav navbar-nav">
+      <li><a href="Product15.html">Learn more</a></li>
+    </ul>
+</div>
+</div>
+<div class="container">
+  <h1><img src="Product16.jpg" width="200" height="150" alt=""/></h1>
+	<h2 style="padding-left: 225px">MAGEGEE</h2>
+  <p style="padding-left: 225px">Portable 60% Mechanical Gaming Keyboard, MK-Box LED Backlit Compact 68 Keys Mini Wired Office Keyboard with Red Switch for Windows Laptop PC Mac - Black/Grey</p>
+	<h5 style="padding-left: 225px"> Price: $26.99 </h5>
+  <div style="padding-left: 225px">
+  <ul class="nav navbar-nav">
+      <li><a href="Product16.html">Learn more</a></li>
+    </ul>
+</div>
+</div>
+<div class="container">
+  <h1><img src="Product17.jpg" width="200" height="130" alt=""/></h1>
+<h2 style="padding-left: 225px">MAGEGEE</h2>
+  <p style="padding-left: 225px">75% Mechanical Gaming Keyboard with Blue Switch, LED Blue Backlit Keyboard, 87 Keys Compact TKL Wired Computer Keyboard for Windows Laptop PC Gamer - Blue/White</p>
+	<h5 style="padding-left: 225px"> Price: $26.99 </h5>
+  <div style="padding-left: 225px">
+  <ul class="nav navbar-nav">
+      <li><a href="Product17.html">Learn more</a></li>
+    </ul>
+</div>
+</div>
+ <div class="container">
+  <h1><img src="Product18.jpg" width="200" height="140" alt=""/></h1>
+	<h2 style="padding-left: 225px">REDDRAGON</h2>
+  <p style="padding-left: 225px">Curved 24.5-inch Gaming Monitor up to 240Hz 1080p R1500 1ms DisplayPort x2 HDMI x2 Blue Light Shift Build-in Speakers, Machine Black 2023 (C255B-FWT240)</p>
+	 <h5 style="padding-left: 225px"> Price: $50.99 </h5>
+  <div style="padding-left: 225px">
+  <ul class="nav navbar-nav">
+      <li><a href="Product18.html">Learn more</a></li>
+    </ul>
+</div>
+</div>
+ <div class="container">
+  <h1><img src="Product19.jpg" width="200" height="130" alt=""/></h1>
+	<h2 style="padding-left: 225px">WOMIER</h2>
+  <p style="padding-left: 225px">60% Percent Keyboard, WK61 Mechanical RGB Wired Gaming Keyboard, Hot-Swappable Keyboard with Blue Sea PBT Keycaps for Windows PC Gamers - Linear Red Switch</p>
+	<h5 style="padding-left: 225px"> Price: $35.99 </h5>
+  <div style="padding-left: 225px">
+  <ul class="nav navbar-nav">
+      <li><a href="Product19.html">Learn more</a></li>
+    </ul>
+</div>
+</div>
+<div class="container">
+  <h1><img src="Product20.jpg" width="200" height="130" alt=""/></h1>
+<h2 style="padding-left: 225px">GEODMAER</h2>
+  <p style="padding-left: 225px">65% Wireless Gaming Keyboard, Rechargeable Backlit Gaming Keyboard, 68 Keys Ultra-Compact Anti-ghosting No-Conflict Wireless Keyboard for PC Laptop PS5 PS4 Xbox One Mac Gamer(Black-Grey)</p>
+	<h5 style="padding-left: 225px"> Price: $22.99 </h5>
+  <div style="padding-left: 225px">
+  <ul class="nav navbar-nav">
+      <li><a href="Product20.html">Learn more</a></li>
+    </ul>
+</div>
+</div>
+ <div class="container">
+  <h1><img src="Product21.jpg" width="100" height="200" alt=""/></h1>
+	<h2 style="padding-left: 225px">HYPERX</h2>
+  <p style="padding-left: 225px">QuadCast - USB Condenser Gaming Microphone, for PC, PS4, PS5 and Mac, Anti-Vibration Shock Mount, Four Polar Patterns, Pop Filter, Gain Control, Podcasts, Twitch, YouTube, Discord, Red LED</p>
+	 <h5 style="padding-left: 225px"> Price: $116.99 </h5>
+  <div style="padding-left: 225px">
+  <ul class="nav navbar-nav">
+      <li><a href="Product21.html">Learn more</a></li>
+    </ul>
+</div>
+</div>
+<div class="container">
+  <h1><img src="Product22.jpg" width="150" height="200" alt=""/></h1>
+	<h2 style="padding-left: 225px">FIFINE</h2>
+  <p style="padding-left: 225px">Gaming USB Microphone for PC PS5, Condenser Mic with Quick Mute, RGB Indicator, Tripod Stand, Pop Filter, Shock Mount, Gain Control for Streaming Discord Twitch Podcasts Videos- AmpliGame</p>
+	<h5 style="padding-left: 225px"> Price: $27.99 </h5>
+  <div style="padding-left: 225px">
+  <ul class="nav navbar-nav">
+      <li><a href="Product22.html">Learn more</a></li>
+    </ul>
+</div>
+</div>
+<div class="container">
+  <h1><img src="Product23.jpg" width="175" height="200" alt=""/></h1>
+<h2 style="padding-left: 225px">AUDIOPRO</h2>
+  <p style="padding-left: 225px">USB Microphone, Cardioid Condenser Gaming Mic for PC/Laptop/Phone/PS4/5, Headphone Output, Volume Control, USB Type-C Plug and Play, LED Mute Button, for Streaming, Podcast, Studio </p>
+	<h5 style="padding-left: 225px"> Price: $39.99 </h5>
+  <div style="padding-left: 225px">
+  <ul class="nav navbar-nav">
+      <li><a href="Product23.html">Learn more</a></li>
+    </ul>
+</div>
+</div>
+ <div class="container">
+  <h1><img src="Product24.jpg" width="140" height="230" alt=""/></h1>
+	<h2 style="padding-left: 225px">RAZOR</h2>
+  <p style="padding-left: 225px">Seiren Mini USB Condenser Microphone: for Streaming and Gaming on PC - Professional Recording Quality - Precise Supercardioid Pickup Pattern - Tilting Stand - Shock Resistant - Classic Black</p>
+	 <h5 style="padding-left: 225px"> Price: $38.99 </h5>
+  <div style="padding-left: 225px">
+  <ul class="nav navbar-nav">
+      <li><a href="Product24.html">Learn more</a></li>
+    </ul>
+</div>
+</div>
+<div class="container">
+  <h1><img src="Product25.jpg" width="150" height="200" alt=""/></h1>
+	<h2 style="padding-left: 225px">LOGITECH</h2>
+  <p style="padding-left: 225px">for Creators Blue Snowball iCE USB Microphone for Gaming, Streaming, Podcasting, Twitch, YouTube, Discord, Recording for PC and Mac, Plug and Play - White</p>
+	 <h5 style="padding-left: 225px"> Price: $49.99 </h5>
+  <div style="padding-left: 225px">
+  <ul class="nav navbar-nav">
+      <li><a href="Product25.html">Learn more</a></li>
+    </ul>
+</div>
+</div>
+<!-- InstanceEndEditable -->
+</body>
+<!-- InstanceEnd --></html>
